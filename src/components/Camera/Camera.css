@@ -1,0 +1,67 @@
+:root {
+    --image-grayscale: 0;
+    --image-sepia: 0;
+    --image-brightness: 1;
+    --image-contrast: 1;
+    --image-saturation: 1;
+    --image-color : 0;
+    --image-blur: 0;
+}
+
+.container {
+    position: relative;
+
+    filter:
+        grayscale(var(--image-grayscale))
+        sepia(var(--image-sepia))
+        brightness(var(--image-brightness))
+        contrast(var(--image-contrast))
+        hue-rotate(var(--image-color))
+        saturate(var(--image-saturation))
+        blur(var(--image-blur));
+}
+
+.container,
+.video,
+.canvas,
+.image {
+    display: block;
+    width: 100%;
+    height: 25rem;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.image {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.video {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.button {
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50% - 2rem);
+
+    display: block;
+    width: 4rem;
+    height: 4rem;
+
+    background: var(--color-red);
+
+    border: .4rem solid var(--color-white);
+    border-radius: 50%;
+
+    font-size: 0;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" fill="#EC5F67" cx="150" cy="150" r="150"></circle>
+        <path d="M94.5,205.3 C93.3,205.3 93,204.8 93,203.8 L93,96.3 C93,95.5 93.3,95 94.2,95 L110,95 C110.8,95 111,95.3 111,96.2 L111,188.8 L152.2,188.8 C153,188.8 153.3,189.1 153.1,190 L150.6,204.2 C150.4,205 149.9,205.4 149.1,205.4 L94.5,205.4 L94.5,205.3 Z" id="Path" fill="#FFFFFF"></path>
+        <path d="M169.5,140.9 C169.5,139.7 169.5,136.8 169,131.2 C169,130.4 169.2,130.2 169.8,129.9 C175.9,127.4 190.4,123 206.6,123 C207.4,123 207.8,123.2 207.8,124 L207.8,138.4 C207.8,139.2 207.5,139.4 206.6,139.4 C200.3,139.1 191,139.9 187.5,141.4 L187.5,204.5 C187.5,205.3 187.2,205.7 186.3,205.7 L170.6,205.7 C169.8,205.7 169.4,205.4 169.4,204.5 L169.4,140.9 L169.5,140.9 Z" id="Path" fill="#FFFFFF"></path>
+    </g>
+</svg>

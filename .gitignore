@@ -1,0 +1,8 @@
+# Development
+/node_modules
+
+# Dist
+/dist
+
+# env file
+.env

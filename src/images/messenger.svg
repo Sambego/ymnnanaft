@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" fill="#EC5F67" cx="150" cy="150" r="150"></circle>
+        <g id="Facebook_Messenger_logo" transform="translate(51.000000, 50.000000)" fill-rule="nonzero">
+            <path d="M36.5088496,164.176991 L36.5088496,199.752212 L69.7734513,180.840708 C79.0460177,183.513274 88.9026549,184.955752 99.1150442,184.955752 C153.858407,184.955752 198.230088,143.548673 198.230088,92.4778761 C198.230088,41.4035398 153.858407,2.84217094e-14 99.1150442,2.84217094e-14 C44.3752212,2.84217094e-14 0,41.4035398 0,92.4778761 C0,121.39823 14.2283186,147.221239 36.5088496,164.176991 Z" id="Shape" fill="#FFFFFF"></path>
+            <polygon id="Shape" fill="#EC5F67" points="88.5309735 67.1486726 35.0787611 123.743363 83.7247788 97.0530973 109.141593 123.743363 162.292035 67.1486726 114.185841 93.3716814 88.5309735 67.1486726"></polygon>
+        </g>
+    </g>
+</svg>

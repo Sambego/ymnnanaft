@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" fill="#EC5F67" cx="150" cy="150" r="150"></circle>
+        <g id="Telegram_logo" transform="translate(50.000000, 50.000000)" fill-rule="nonzero">
+            <circle id="Oval" fill="#FFFFFF" cx="100" cy="100" r="100"></circle>
+            <path d="M81.6666667,145.833333 C78.427,145.833333 78.9775,144.610083 77.8601667,141.525417 L68.3333333,110.171583 L141.666667,66.6666667" id="Shape" fill="#DB5960"></path>
+            <path d="M81.6666667,145.833333 C84.1666667,145.833333 85.27125,144.69 86.6666667,143.333333 L100,130.368333 L83.3683333,120.339167" id="Shape" fill="#EC5F67"></path>
+            <path d="M83.3666667,120.341667 L123.666667,150.115833 C128.265417,152.65325 131.5845,151.3395 132.73,145.84625 L149.134167,68.54375 C150.813667,61.81025 146.567417,58.75625 142.168,60.7535833 L45.843,97.8960833 C39.2679167,100.533333 39.30625,104.201583 44.6445,105.836083 L69.3636667,113.551333 L126.591167,77.4471667 C129.29275,75.8089167 131.77225,76.689675 129.737167,78.4958333" id="Shape" fill="#EC5F67"></path>
+        </g>
+    </g>
+</svg>

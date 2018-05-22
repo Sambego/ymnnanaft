@@ -1,0 +1,70 @@
+{
+  "name": "you-might-not-need-a-native-app-for-that",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:dev": "webpack-dev-server --mode development --watch --open --history-api-fallback",
+    "build:prod": "webpack --mode production",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint --config ./.eslintrc src",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "author": "Sam Bellen",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "jest": "^22.4.3",
+    "keycode": "^2.2.0",
+    "prismjs": "^1.14.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.4",
+    "postcss-nested": "^3.0.0",
+    "postcss-reporter": "^5.0.0",
+    "prettier": "^1.12.1",
+    "react-test-renderer": "^16.3.2",
+    "regenerator-runtime": "^0.11.1",
+    "style-loader": "^0.21.0",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-serve": "^0.3.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css)$": "identity-obj-proxy"
+    }
+  }
+}

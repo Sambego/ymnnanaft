@@ -1,0 +1,55 @@
+:root {
+    --heart-rate: 1s;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    animation: pulse var(--heart-rate) ease-in-out alternate infinite;
+
+    position: relative;
+
+    display: block;
+    width: 15rem;
+}
+
+.hr {
+    transform: translate3d(-50%, -50%, 0);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.button {
+    padding: 2rem 4rem;
+
+    background: var(--color-blue);
+
+    border: none;
+    border-radius: .5rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
