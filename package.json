@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.5",
+    "google-maps-api": "^2.0.1",
     "jest": "^22.4.3",
     "keycode": "^2.2.0",
     "prismjs": "^1.14.0",
@@ -35,6 +36,7 @@
     "css-loader": "^0.28.11",
     "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
+    "dotenv-webpack": "^1.5.5",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",

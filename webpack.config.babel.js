@@ -1,4 +1,5 @@
 import HtmlWebPackPlugin from "html-webpack-plugin";
+import Dotenv from "dotenv-webpack";
 
 export default {
   module: {
@@ -43,6 +44,7 @@ export default {
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
-    })
+    }),
+    new Dotenv()
   ]
 };
