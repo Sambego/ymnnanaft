@@ -50,6 +50,7 @@ import HealthCode6 from "./slides/Health/Code6";
 import AssistantIntro from "./slides/Assistant/Intro";
 import AssistantDemo1 from "./slides/Assistant/Demo1";
 import Stats from "./slides/Stats";
+import SubTitle from "./slides/Subtitle";
 import Questions from "./slides/Questions";
 import Thanks from "./slides/Thanks";
 
@@ -114,6 +115,10 @@ ReactDOM.render(
     <AssistantIntro />
     <AssistantDemo1 />
     <Stats browsers={["chrome"]} />
+    <SubTitle text="What else?" />
+    <SubTitle text="Installable web apps" />
+    <SubTitle text="Offline web apps" />
+    <SubTitle text="Ask me again tomorrow and I might have 10 more slides" />
     <Questions />
     <Thanks />
   </Deck>,
