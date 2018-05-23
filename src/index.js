@@ -16,6 +16,7 @@ import ImageIntro from "./slides/Image/Intro";
 import ImageTitle1 from "./slides/Image/Title1";
 import ImageTitle2 from "./slides/Image/Title2";
 import ImageTitle3 from "./slides/Image/Title3";
+import ImageTitle4 from "./slides/Image/Title4";
 import ImageDemo1 from "./slides/Image/Demo1";
 import ImageDemo2 from "./slides/Image/Demo2";
 import ImageDemo3 from "./slides/Image/Demo3";
@@ -48,6 +49,7 @@ import HealthCode5 from "./slides/Health/Code5";
 import HealthCode6 from "./slides/Health/Code6";
 import AssistantIntro from "./slides/Assistant/Intro";
 import AssistantDemo1 from "./slides/Assistant/Demo1";
+import Stats from "./slides/Stats";
 
 import "./styles/styles.css";
 
@@ -68,13 +70,16 @@ ReactDOM.render(
     <ImageDemo1 />
     <ImageCode1 />
     <ImageCode2 />
+    <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
     <ImageDemo2 />
     <ImageCode3 />
     <ImageCode4 />
     <ImageCode5 />
     <ImageCode6 />
+    <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
     <ImageTitle3 />
     <ImageCode7 />
+    <Stats browsers={["chrome", "opera"]} />
     <ImageTitle2 />
     <ImageDemo3 />
     <ImageCode8 />
@@ -82,23 +87,30 @@ ReactDOM.render(
     <ImageCode9 />
     <ImageDemo5 />
     <ImageDemo6 />
+    <Stats browsers={["chrome"]} />
+    <ImageTitle4 />
     <ImageDemo7 />
     <ImageCode10 />
     <ImageCode11 />
     <ImageCode12 />
     <ImageCode13 />
+    <Stats browsers={["chrome", "firefox"]} />
     <HealthIntro />
     <HealthDemo1 />
     <HealthCode1 />
     <HealthCode2 />
     <HealthCode3 />
     <HealthCode6 />
+    <Stats browsers={["chrome", "opera"]} />
     <HealthDemo2 />
     <HealthCode4 />
+    <Stats browsers={["chrome", "firefox", "edge"]} />
     <HealthDemo3 />
     <HealthCode5 />
+    <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
     <AssistantIntro />
     <AssistantDemo1 />
+    <Stats browsers={["chrome"]} />
   </Deck>,
   document.getElementById("app")
 );
