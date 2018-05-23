@@ -4,6 +4,7 @@ import Speech from "../../services/Speech";
 import AI from "../../services/AI";
 import Phone from "../Phone";
 import Icon from "../Icon";
+import Wave from "../Wave";
 import mic from "../../images/micropone.svg";
 import styles from "./Assistant.css";
 
@@ -65,6 +66,7 @@ export default class Assistant extends Component {
           <button className={styles.button} onClick={this.handleListen}>
             <Icon src={mic} style={{ width: "3rem", margin: "0 auto" }} />
           </button>
+          <Wave className={styles.canvas} />
         </div>
       </Phone>
     );

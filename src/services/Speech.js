@@ -4,7 +4,6 @@ export default class Speech {
   window.webkitSpeechRecognition;
 
   static speak(input, female = true) {
-    console.log(input);
     const utterThis = new window.SpeechSynthesisUtterance(input);
     const voices = this.synth.getVoices();
     const doSpeak = () => {

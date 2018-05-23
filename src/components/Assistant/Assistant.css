@@ -11,7 +11,8 @@
 .button {
     position: absolute;
     left: calc(50% - 5rem);
-    bottom: 2rem;
+    bottom: 3rem;
+    z-index: 1;
 
     width: 10rem;
     height: 10rem;
@@ -26,8 +27,16 @@
 }
 
 .text {
+    position: relative;
+    z-index: 1;
+
     padding: 2rem;
 
     font-size: 3rem;
     font-weight: bold;
+}
+
+.canvas {
+    position: absolute;
+    bottom: 0;
 }
