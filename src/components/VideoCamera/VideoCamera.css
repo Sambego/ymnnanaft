@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.video {
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.button {
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50% - 2rem);
+
+    display: block;
+    width: 4rem;
+    height: 4rem;
+
+    background: var(--color-red);
+
+    border: .4rem solid var(--color-white);
+    border-radius: 50%;
+    outline: none;
+
+    font-size: 0;
+}
+
+.play {
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50% - 2rem);
+
+    display: block;
+    width: 4rem;
+    height: 4rem;
+
+    background: var(--color-white);
+
+    border: .4rem solid var(--color-white);
+    border-radius: 50%;
+    outline: none;
+}

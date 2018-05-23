@@ -15,12 +15,16 @@ export default class Camera extends Component {
       "--image-color": PropTypes.string,
       "--image-blur": PropTypes.string
     }),
-    onStream: PropTypes.func
+    onStream: PropTypes.func,
+    showButton: PropTypes.bool,
+    className: PropTypes.string
   };
 
   static defaultProps = {
     filters: {},
-    onStream: () => true
+    onStream: () => true,
+    showButton: true,
+    className: ""
   };
 
   canvas = React.createRef();
@@ -39,7 +43,8 @@ export default class Camera extends Component {
 
     window.navigator.mediaDevices
       .getUserMedia({
-        video: true
+        video: true,
+        audio: true
       })
       .then(stream => {
         const [track] = stream.getVideoTracks();
@@ -109,7 +114,10 @@ export default class Camera extends Component {
     });
 
     return (
-      <div className={styles.container} style={this.props.filters}>
+      <div
+        className={`${styles.container} ${this.props.className}`}
+        style={this.props.filters}
+      >
         <video ref={this.video} autoPlay className={videoClasses} muted />
         <img
           ref={this.image}
@@ -123,9 +131,11 @@ export default class Camera extends Component {
           width={this.state.width}
           height={this.state.height}
         />
-        <button className={styles.button} onClick={this.handleTakePhoto}>
-          Take picture
-        </button>
+        {this.props.showButton && (
+          <button className={styles.button} onClick={this.handleTakePhoto}>
+            Take picture
+          </button>
+        )}
       </div>
     );
   }

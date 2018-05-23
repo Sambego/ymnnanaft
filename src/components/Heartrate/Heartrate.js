@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Icon from "../../components/Icon";
 import Phone from "../../components/Phone";
+import Battery from "../../components/Battery";
 import Heartrate from "../../services/Heartrate";
 import heart from "../../images/heart.svg";
 import styles from "./Heartrate.css";
@@ -15,19 +16,25 @@ export default class HeartrateComponent extends Component {
 
   state = {
     isListening: false,
-    heartrate: 0
+    heartrate: 0,
+    battery: 0
   };
 
   handleHeartrate = () => {
     const hr = new Heartrate();
     hr
       .getDevice({
-        optionalServices: ["heart_rate"],
+        optionalServices: ["heart_rate", "battery_service"],
         filters: [{ name: "Polar H7 64877512" }]
         // acceptAllDevices: true
       })
       .then(() => {
         this.setState(state => ({ ...state, isListening: true }));
+
+        hr
+          .getDeviceBatteryInfo()
+          .then(battery => this.setState(state => ({ ...state, battery })))
+          .catch(error => console.log("r", error));
 
         hr.getHeartRate().then(heartrateCharacteristic => {
           heartrateCharacteristic.addEventListener(
@@ -54,14 +61,17 @@ export default class HeartrateComponent extends Component {
             </button>
           )}
           {this.state.isListening && (
-            <div
-              className={styles.heart}
-              style={{
-                "--heart-rate": `${1 / this.state.heartrate * 60}s`
-              }}
-            >
-              <Icon src={heart} />
-              <span className={styles.hr}>{this.state.heartrate}</span>
+            <div>
+              <div
+                className={styles.heart}
+                style={{
+                  "--heart-rate": `${1 / this.state.heartrate * 60}s`
+                }}
+              >
+                <Icon src={heart} />
+                <span className={styles.hr}>{this.state.heartrate}</span>
+              </div>
+              <Battery className={styles.battery} level={this.state.battery} />
             </div>
           )}
         </div>

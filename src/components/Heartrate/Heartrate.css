@@ -45,6 +45,11 @@
     color: var(--color-white);
 }
 
+.battery {
+    transform: scale(.5);
+    margin: 2rem auto 0;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(.5);

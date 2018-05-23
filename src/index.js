@@ -22,6 +22,7 @@ import ImageDemo3 from "./slides/Image/Demo3";
 import ImageDemo4 from "./slides/Image/Demo4";
 import ImageDemo5 from "./slides/Image/Demo5";
 import ImageDemo6 from "./slides/Image/Demo6";
+import ImageDemo7 from "./slides/Image/Demo7";
 import ImageCode1 from "./slides/Image/Code1";
 import ImageCode2 from "./slides/Image/Code2";
 import ImageCode3 from "./slides/Image/Code3";
@@ -31,6 +32,10 @@ import ImageCode6 from "./slides/Image/Code6";
 import ImageCode7 from "./slides/Image/Code7";
 import ImageCode8 from "./slides/Image/Code8";
 import ImageCode9 from "./slides/Image/Code9";
+import ImageCode10 from "./slides/Image/Code10";
+import ImageCode11 from "./slides/Image/Code11";
+import ImageCode12 from "./slides/Image/Code12";
+import ImageCode13 from "./slides/Image/Code13";
 import HealthIntro from "./slides/Health/Intro";
 import HealthDemo1 from "./slides/Health/Demo1";
 import HealthDemo2 from "./slides/Health/Demo2";
@@ -40,6 +45,7 @@ import HealthCode2 from "./slides/Health/Code2";
 import HealthCode3 from "./slides/Health/Code3";
 import HealthCode4 from "./slides/Health/Code4";
 import HealthCode5 from "./slides/Health/Code5";
+import HealthCode6 from "./slides/Health/Code6";
 import AssistantIntro from "./slides/Assistant/Intro";
 import AssistantDemo1 from "./slides/Assistant/Demo1";
 
@@ -76,11 +82,17 @@ ReactDOM.render(
     <ImageCode9 />
     <ImageDemo5 />
     <ImageDemo6 />
+    <ImageDemo7 />
+    <ImageCode10 />
+    <ImageCode11 />
+    <ImageCode12 />
+    <ImageCode13 />
     <HealthIntro />
     <HealthDemo1 />
     <HealthCode1 />
     <HealthCode2 />
     <HealthCode3 />
+    <HealthCode6 />
     <HealthDemo2 />
     <HealthCode4 />
     <HealthDemo3 />
