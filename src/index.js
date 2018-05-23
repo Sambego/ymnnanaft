@@ -33,6 +33,10 @@ import ImageCode8 from "./slides/Image/Code8";
 import ImageCode9 from "./slides/Image/Code9";
 import HealthIntro from "./slides/Health/Intro";
 import HealthDemo1 from "./slides/Health/Demo1";
+import HealthDemo2 from "./slides/Health/Demo2";
+import HealthCode1 from "./slides/Health/Code1";
+import HealthCode2 from "./slides/Health/Code2";
+import HealthCode3 from "./slides/Health/Code3";
 
 import "./styles/styles.css";
 
@@ -69,6 +73,10 @@ ReactDOM.render(
     <ImageDemo6 />
     <HealthIntro />
     <HealthDemo1 />
+    <HealthCode1 />
+    <HealthCode2 />
+    <HealthCode3 />
+    <HealthDemo2 />
   </Deck>,
   document.getElementById("app")
 );

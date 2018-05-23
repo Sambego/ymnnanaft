@@ -29,8 +29,8 @@ export default class HeartrateComponent extends Component {
       .then(() => {
         this.setState(state => ({ ...state, isListening: true }));
 
-        hr.getHeartRate().then(heartrateCharectaristic => {
-          heartrateCharectaristic.addEventListener(
+        hr.getHeartRate().then(heartrateCharacteristic => {
+          heartrateCharacteristic.addEventListener(
             "characteristicvaluechanged",
             event => {
               this.setState(state => ({
