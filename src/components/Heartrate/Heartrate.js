@@ -33,13 +33,13 @@ export default class HeartrateComponent extends Component {
 
         hr
           .getDeviceBatteryInfo()
-          .then(battery => this.setState(state => ({ ...state, battery })))
-          .catch(error => console.log("r", error));
+          .then(battery => this.setState(state => ({ ...state, battery })));
 
         hr.getHeartRate().then(heartrateCharacteristic => {
           heartrateCharacteristic.addEventListener(
             "characteristicvaluechanged",
             event => {
+              console.log(Heartrate.parseHeartrate(event.target.value));
               this.setState(state => ({
                 ...state,
                 heartrate: Heartrate.parseHeartrate(event.target.value)

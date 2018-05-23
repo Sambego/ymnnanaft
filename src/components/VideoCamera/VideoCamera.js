@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 import Phone from "../Phone";
 import Icon from "../Icon";
@@ -6,8 +6,8 @@ import play from "../../images/play.svg";
 import styles from "./VideoCamera.css";
 
 export default class VideoCamera extends Component {
-  video = React.createRef();
   mirror = React.createRef();
+  video = React.createRef();
 
   state = {
     isRecording: false,
@@ -79,7 +79,7 @@ export default class VideoCamera extends Component {
       <Phone>
         <div className={styles.container}>
           {this.state.recordingUrl && (
-            <Fragment>
+            <div className={styles["video-container"]}>
               <video
                 src={this.state.recordingUrl}
                 className={styles.video}
@@ -94,18 +94,23 @@ export default class VideoCamera extends Component {
                   }}
                 />
               </button>
-            </Fragment>
+            </div>
           )}
           {!this.state.recordingUrl && (
-            <Fragment>
-              <video className={styles.video} ref={this.mirror} />
+            <div className={styles["video-container"]}>
+              <video
+                className={styles.video}
+                ref={this.mirror}
+                autoPlay
+                muted
+              />
               <button
                 className={styles.button}
                 onClick={this.handleRecordVideo}
               >
                 click
               </button>
-            </Fragment>
+            </div>
           )}
         </div>
       </Phone>
