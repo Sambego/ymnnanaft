@@ -50,6 +50,8 @@ import HealthCode6 from "./slides/Health/Code6";
 import AssistantIntro from "./slides/Assistant/Intro";
 import AssistantDemo1 from "./slides/Assistant/Demo1";
 import Stats from "./slides/Stats";
+import Questions from "./slides/Questions";
+import Thanks from "./slides/Thanks";
 
 import "./styles/styles.css";
 
@@ -57,6 +59,7 @@ ReactDOM.render(
   <Deck>
     <Title />
     <About />
+    <Questions />
     <NativeIntro />
     <NativeMessaging />
     <NativeImage />
@@ -111,6 +114,8 @@ ReactDOM.render(
     <AssistantIntro />
     <AssistantDemo1 />
     <Stats browsers={["chrome"]} />
+    <Questions />
+    <Thanks />
   </Deck>,
   document.getElementById("app")
 );
