@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button {
+    position: absolute;
+    left: calc(50% - 5rem);
+    bottom: 2rem;
+
+    width: 10rem;
+    height: 10rem;
+
+    background: var(--color-orange);
+
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    align-content: center;
+}
+
+.text {
+    padding: 2rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+}

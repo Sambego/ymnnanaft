@@ -40,6 +40,8 @@ import HealthCode2 from "./slides/Health/Code2";
 import HealthCode3 from "./slides/Health/Code3";
 import HealthCode4 from "./slides/Health/Code4";
 import HealthCode5 from "./slides/Health/Code5";
+import AssistantIntro from "./slides/Assistant/Intro";
+import AssistantDemo1 from "./slides/Assistant/Demo1";
 
 import "./styles/styles.css";
 
@@ -83,6 +85,8 @@ ReactDOM.render(
     <HealthCode4 />
     <HealthDemo3 />
     <HealthCode5 />
+    <AssistantIntro />
+    <AssistantDemo1 />
   </Deck>,
   document.getElementById("app")
 );

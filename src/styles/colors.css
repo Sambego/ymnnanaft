@@ -14,6 +14,8 @@
     --color-red-light: #ec6c89;
     --color-red: #f65177;
 
+    --color-orange: #F99157;
+
     --color-primary: var(--color-blue);
     --color-accept: var(--color-green);
     --color-danger: var(--color-red);
