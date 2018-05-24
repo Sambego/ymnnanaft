@@ -33,6 +33,7 @@ export default class Camera extends Component {
 
   state = {
     isPictureTaken: false,
+    showButton: true,
     imageUrl: "#",
     width: 0,
     height: 0
@@ -78,7 +79,8 @@ export default class Camera extends Component {
           this.setState(state => ({
             ...state,
             imageUrl: window.URL.createObjectURL(blob),
-            isPictureTaken: true
+            isPictureTaken: true,
+            showButton: false
           }));
 
           window.URL.revokeObjectURL(blob);
@@ -101,7 +103,8 @@ export default class Camera extends Component {
     return this.setState(state => ({
       ...state,
       imageUrl: this.canvas.current.toDataURL("image/png"),
-      isPictureTaken: true
+      isPictureTaken: true,
+      showButton: false
     }));
   }
 
@@ -131,11 +134,12 @@ export default class Camera extends Component {
           width={this.state.width}
           height={this.state.height}
         />
-        {this.props.showButton && (
-          <button className={styles.button} onClick={this.handleTakePhoto}>
-            Take picture
-          </button>
-        )}
+        {this.props.showButton &&
+          this.state.showButton && (
+            <button className={styles.button} onClick={this.handleTakePhoto}>
+              Take picture
+            </button>
+          )}
       </div>
     );
   }

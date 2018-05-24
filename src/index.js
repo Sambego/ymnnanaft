@@ -37,6 +37,7 @@ import ImageCode10 from "./slides/Image/Code10";
 import ImageCode11 from "./slides/Image/Code11";
 import ImageCode12 from "./slides/Image/Code12";
 import ImageCode13 from "./slides/Image/Code13";
+import ImageCode14 from "./slides/Image/Code14";
 import HealthIntro from "./slides/Health/Intro";
 import HealthDemo1 from "./slides/Health/Demo1";
 import HealthDemo2 from "./slides/Health/Demo2";
@@ -81,6 +82,8 @@ ReactDOM.render(
     <ImageCode5 />
     <ImageCode6 />
     <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
+    <SubTitle text="Destructive editing" />
+    <ImageCode14 />
     <ImageTitle3 />
     <ImageCode7 />
     <Stats browsers={["chrome", "opera"]} />
@@ -119,6 +122,13 @@ ReactDOM.render(
     <SubTitle text="Installable web apps" />
     <SubTitle text="Offline web apps" />
     <SubTitle text="Ask me again tomorrow and I might have 10 more slides" />
+    <SubTitle text="So, is the web better than Native apps?" />
+    <SubTitle text="Yes" />
+    <SubTitle text="No" />
+    <SubTitle text="Maybe" />
+    <SubTitle text="It depends" />
+    <SubTitle text="The web is evolving" />
+    <SubTitle text="The web is what we make of it" />
     <Questions />
     <Thanks />
   </Deck>,
