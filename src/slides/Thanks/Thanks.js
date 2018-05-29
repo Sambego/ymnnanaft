@@ -4,7 +4,7 @@ import Slide from "../../components/Slide";
 
 const Thanks = () => (
   <Slide>
-    <p style={{ fontWeight: "bold", fontSize: "10rem" }}>Ačiū</p>
+    <p style={{ fontWeight: "bold", fontSize: "10rem" }}>Thank you</p>
   </Slide>
 );
 
