@@ -1,5 +1,6 @@
 import HtmlWebPackPlugin from "html-webpack-plugin";
 import Dotenv from "dotenv-webpack";
+import CopyWebpackPlugin from "copy-webpack-plugin";
 
 export default {
   module: {
@@ -45,6 +46,18 @@ export default {
       template: "./src/index.html",
       filename: "./index.html"
     }),
-    new Dotenv()
+    new Dotenv(),
+    new CopyWebpackPlugin([
+      {
+        context: "./src/favicon/",
+        from: "**/*"
+      },
+      {
+        from: "./src/site.webmanifest"
+      },
+      {
+        from: "./src/browserconfig.xml"
+      }
+    ])
   ]
 };
