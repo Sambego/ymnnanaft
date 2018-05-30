@@ -148,6 +148,7 @@ ReactDOM.render(
           title="Go to the online presentation"
           target="_blank"
           style={{ color: "#000" }}
+          rel="noopener noreferrer"
         >
           https://go-web.sambego.be
         </a>
