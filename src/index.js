@@ -141,6 +141,18 @@ ReactDOM.render(
     <SubTitle text="It depends" />
     <SubTitle text="The web is evolving" />
     <SubTitle text="The web is what we make of it" />
+    <SubTitle
+      text={
+        <a
+          href="https://go-web.sambego.be/"
+          title="Go to the online presentation"
+          target="_blank"
+          style={{ color: "#000" }}
+        >
+          https://go-web.sambego.be
+        </a>
+      }
+    />
     <Questions />
     <Thanks />
   </Deck>,
