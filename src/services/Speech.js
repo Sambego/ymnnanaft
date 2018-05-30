@@ -11,7 +11,8 @@ export default class Speech {
 
       // Set voice params
       utterThis.voice = voice;
-      utterThis.rate = 0.8;
+      utterThis.rate = female ? 0.8 : 1;
+      utterThis.pitch = female ? 1.2 : 1;
 
       // Speak
       this.synth.speak(utterThis);

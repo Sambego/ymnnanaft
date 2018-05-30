@@ -50,6 +50,12 @@ import HealthCode5 from "./slides/Health/Code5";
 import HealthCode6 from "./slides/Health/Code6";
 import AssistantIntro from "./slides/Assistant/Intro";
 import AssistantDemo1 from "./slides/Assistant/Demo1";
+import AssistantDemo2 from "./slides/Assistant/Demo2";
+import AssistantDemo3 from "./slides/Assistant/Demo3";
+import AssistantCode1 from "./slides/Assistant/Code1";
+import AssistantCode2 from "./slides/Assistant/Code2";
+import AssistantCode3 from "./slides/Assistant/Code3";
+import AssistantCode4 from "./slides/Assistant/Code4";
 import Stats from "./slides/Stats";
 import SubTitle from "./slides/Subtitle";
 import Questions from "./slides/Questions";
@@ -117,7 +123,14 @@ ReactDOM.render(
     <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
     <AssistantIntro />
     <AssistantDemo1 />
+    <AssistantCode1 />
     <Stats browsers={["chrome"]} />
+    <AssistantCode2 />
+    <AssistantDemo2 />
+    <AssistantCode3 />
+    <AssistantDemo3 />
+    <AssistantCode4 />
+    <Stats browsers={["chrome", "firefox", "opera"]} />
     <SubTitle text="What else?" />
     <SubTitle text="Installable web apps" />
     <SubTitle text="Offline web apps" />
