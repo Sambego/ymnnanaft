@@ -1,10 +1,11 @@
 import React from "react";
 
 import Slide from "../../components/Slide";
+import Subtitle from "../../components/Subtitle";
 
 const Thanks = () => (
   <Slide>
-    <p style={{ fontWeight: "bold", fontSize: "10rem" }}>Ačiū</p>
+    <Subtitle>Thank you</Subtitle>
   </Slide>
 );
 

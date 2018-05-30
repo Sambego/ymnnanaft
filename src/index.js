@@ -67,7 +67,6 @@ ReactDOM.render(
   <Deck>
     <Title />
     <About />
-    <Questions />
     <NativeIntro />
     <NativeMessaging />
     <NativeImage />
