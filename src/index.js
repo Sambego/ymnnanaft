@@ -48,6 +48,7 @@ import HealthCode3 from "./slides/Health/Code3";
 import HealthCode4 from "./slides/Health/Code4";
 import HealthCode5 from "./slides/Health/Code5";
 import HealthCode6 from "./slides/Health/Code6";
+import HealthCode7 from "./slides/Health/Code7";
 import AssistantIntro from "./slides/Assistant/Intro";
 import AssistantDemo1 from "./slides/Assistant/Demo1";
 import AssistantDemo2 from "./slides/Assistant/Demo2";
@@ -70,6 +71,7 @@ ReactDOM.render(
     <NativeIntro />
     <NativeMessaging />
     <NativeImage />
+    <SubTitle text="AKA" />
     <NativeImage2 />
     <NativeImageCat />
     <NativeImageCat2 />
@@ -116,7 +118,9 @@ ReactDOM.render(
     <Stats browsers={["chrome", "opera"]} />
     <HealthDemo2 />
     <HealthCode4 />
-    <Stats browsers={["chrome", "firefox", "edge"]} />
+    <Stats browsers={["chrome", "edge"]} />
+    <HealthCode7 />
+    <Stats browsers={["chrome", "edge"]} />
     <HealthDemo3 />
     <HealthCode5 />
     <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
@@ -129,7 +133,7 @@ ReactDOM.render(
     <AssistantCode3 />
     <AssistantDemo3 />
     <AssistantCode4 />
-    <Stats browsers={["chrome", "firefox", "opera"]} />
+    <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
     <SubTitle text="What else?" />
     <SubTitle text="Installable web apps" />
     <SubTitle text="Offline web apps" />
