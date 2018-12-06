@@ -134,12 +134,11 @@ export default class Camera extends Component {
           width={this.state.width}
           height={this.state.height}
         />
-        {this.props.showButton &&
-          this.state.showButton && (
-            <button className={styles.button} onClick={this.handleTakePhoto}>
-              Take picture
-            </button>
-          )}
+        {this.props.showButton && this.state.showButton && (
+          <button className={styles.button} onClick={this.handleTakePhoto}>
+            Take picture
+          </button>
+        )}
       </div>
     );
   }

@@ -1,7 +1,7 @@
 export default class Speech {
   static synth = window.speechSynthesis;
-  static SpeechRecognition = window.SpeechRecognition ||
-  window.webkitSpeechRecognition;
+  static SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
 
   static speak(input, female = true) {
     const utterThis = new window.SpeechSynthesisUtterance(input);

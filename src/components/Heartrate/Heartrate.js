@@ -22,18 +22,17 @@ export default class HeartrateComponent extends Component {
 
   handleHeartrate = () => {
     const hr = new Heartrate();
-    hr
-      .getDevice({
-        optionalServices: ["heart_rate", "battery_service"],
-        filters: [{ name: "Polar H7 64877512" }]
-        // acceptAllDevices: true
-      })
+    hr.getDevice({
+      optionalServices: ["heart_rate", "battery_service"],
+      filters: [{ name: "Polar H7 64877512" }]
+      // acceptAllDevices: true
+    })
       .then(() => {
         this.setState(state => ({ ...state, isListening: true }));
 
-        hr
-          .getDeviceBatteryInfo()
-          .then(battery => this.setState(state => ({ ...state, battery })));
+        hr.getDeviceBatteryInfo().then(battery =>
+          this.setState(state => ({ ...state, battery }))
+        );
 
         hr.getHeartRate().then(heartrateCharacteristic => {
           heartrateCharacteristic.addEventListener(
@@ -65,7 +64,7 @@ export default class HeartrateComponent extends Component {
               <div
                 className={styles.heart}
                 style={{
-                  "--heart-rate": `${1 / this.state.heartrate * 60}s`
+                  "--heart-rate": `${(1 / this.state.heartrate) * 60}s`
                 }}
               >
                 <Icon src={heart} />

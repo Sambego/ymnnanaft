@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import Deck from "./components/Deck";
 import Title from "./slides/Title";
 import About from "./slides/About";
+import Poes from "./slides/Poes";
 import NativeIntro from "./slides/Native/Intro";
 import NativeMessaging from "./slides/Native/Messaging";
 import NativeImage from "./slides/Native/Image";
@@ -57,6 +58,12 @@ import AssistantCode1 from "./slides/Assistant/Code1";
 import AssistantCode2 from "./slides/Assistant/Code2";
 import AssistantCode3 from "./slides/Assistant/Code3";
 import AssistantCode4 from "./slides/Assistant/Code4";
+import AuthIntro from "./slides/Auth/Intro";
+import AuthDemo1 from "./slides/Auth/Demo1";
+import AuthDemo2 from "./slides/Auth/Demo2";
+import AuthCode1 from "./slides/Auth/Code1";
+import AuthCode2 from "./slides/Auth/Code2";
+import AuthCode3 from "./slides/Auth/Code3";
 import Stats from "./slides/Stats";
 import SubTitle from "./slides/Subtitle";
 import Questions from "./slides/Questions";
@@ -68,6 +75,9 @@ ReactDOM.render(
   <Deck>
     <Title />
     <About />
+    <Poes />
+    <SubTitle text="All browsers are equal, but some browsers are more equal than others!" />
+    <Stats browsers={["chrome"]} />
     <NativeIntro />
     <NativeMessaging />
     <NativeImage />
@@ -111,6 +121,7 @@ ReactDOM.render(
     <Stats browsers={["chrome", "firefox"]} />
     <HealthIntro />
     <HealthDemo1 />
+    <SubTitle text="Please don't judge me 🤭" />
     <HealthCode1 />
     <HealthCode2 />
     <HealthCode3 />
@@ -118,9 +129,9 @@ ReactDOM.render(
     <Stats browsers={["chrome", "opera"]} />
     <HealthDemo2 />
     <HealthCode4 />
-    <Stats browsers={["chrome", "edge"]} />
+    <Stats browsers={["chrome", "firefox", "edge"]} />
     <HealthCode7 />
-    <Stats browsers={["chrome", "edge"]} />
+    <Stats browsers={["chrome", "firefox", "edge"]} />
     <HealthDemo3 />
     <HealthCode5 />
     <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
@@ -134,6 +145,26 @@ ReactDOM.render(
     <AssistantDemo3 />
     <AssistantCode4 />
     <Stats browsers={["chrome", "firefox", "edge", "safari", "opera"]} />
+    <AuthIntro />
+    <AuthDemo1 />
+    <AuthCode1 />
+    <AuthCode2 />
+    <AuthCode3 />
+    <AuthDemo2 />
+    <Stats browsers={["chrome", "firefox", "edge"]} />
+    <SubTitle
+      text={
+        <a
+          href="https://webauthn.is"
+          title="Visit the web authentication API playground"
+          target="_blank"
+          style={{ color: "#000" }}
+          rel="noopener noreferrer"
+        >
+          https://webauthn.is
+        </a>
+      }
+    />
     <SubTitle text="What else?" />
     <SubTitle text="Installable web apps" />
     <SubTitle text="Offline web apps" />

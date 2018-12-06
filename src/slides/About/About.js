@@ -20,10 +20,11 @@ const About = () => (
       <div>
         <Subtitle>Sam Bellen</Subtitle>
         <List>
-          <li>Software engineer</li>
-          <li>madewithlove</li>
+          <li>Developer Evangelist</li>
+          <li>Auth0</li>
           <li>Google Developer Expert</li>
           <li>Fronteers</li>
+          <li>@sambego</li>
         </List>
       </div>
     </Columns>

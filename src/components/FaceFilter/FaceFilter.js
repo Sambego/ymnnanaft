@@ -35,6 +35,19 @@ export default class FaceFilter extends Component {
     isDetecting: true
   };
 
+  static getLandmarkColor(landmark) {
+    switch (landmark) {
+      case "eye":
+        return "blue";
+      case "nose":
+        return "green";
+      case "mouth":
+        return "orange";
+      default:
+        return "purple";
+    }
+  }
+
   componentDidMount() {
     window.navigator.mediaDevices
       .getUserMedia({
@@ -58,19 +71,36 @@ export default class FaceFilter extends Component {
     }));
 
     face.landmarks.forEach(landmark => {
-      this.setState(state => ({
-        landmarks: [
-          ...state.landmarks,
-          {
-            width: 30,
-            height: 30,
-            top: landmark.location.y - 15,
-            left: landmark.location.x - 15,
-            color: landmark.type === "eye" ? "green" : "blue",
-            type: landmark.type
-          }
-        ]
-      }));
+      if (landmark.location) {
+        this.setState(state => ({
+          landmarks: [
+            ...state.landmarks,
+            {
+              width: 30,
+              height: 30,
+              top: landmark.location.y - 15,
+              left: landmark.location.x - 15,
+              color: FaceFilter.getLandmarkColor(landmark.type),
+              type: landmark.type
+            }
+          ]
+        }));
+      } else if (landmark.locations) {
+        // console.log(landmark);
+        this.setState(state => ({
+          landmarks: [
+            ...state.landmarks,
+            {
+              width: 30,
+              height: 30,
+              top: landmark.locations[0].y - 15,
+              left: landmark.locations[0].x - 15,
+              color: FaceFilter.getLandmarkColor(landmark.type),
+              type: landmark.type
+            }
+          ]
+        }));
+      }
     });
   }
 
@@ -117,11 +147,9 @@ export default class FaceFilter extends Component {
     return {
       "--box-width": `${box.width}px`,
       "--box-height": `${box.height}px`,
-      "--box-top": `${box.top /
-        this.video.current.videoHeight *
+      "--box-top": `${(box.top / this.video.current.videoHeight) *
         this.video.current.clientHeight}px`,
-      "--box-left": `${box.left /
-        this.video.current.videoWidth *
+      "--box-left": `${(box.left / this.video.current.videoWidth) *
         this.video.current.clientWidth}px`
     };
   }

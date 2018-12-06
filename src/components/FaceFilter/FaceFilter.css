@@ -1,63 +1,71 @@
 :root {
-    --box-top: 0;
-    --box-left: 0;
-    --box-width: 0;
-    --box-height: 0;
-    --box-background: '';
+  --box-top: 0;
+  --box-left: 0;
+  --box-width: 0;
+  --box-height: 0;
+  --box-background: "";
 }
 .container {
-    overflow: hidden;
+  overflow: hidden;
 
-    display: flex;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
 .video-container {
-    position: relative;
+  position: relative;
 
-    min-height: 100%;
+  min-height: 100%;
 }
 
 .video {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 .box {
-    position: absolute;
-    top: var(--box-top);
-    left: var(--box-left);
-    z-index: 1;
+  position: absolute;
+  top: var(--box-top);
+  left: var(--box-left);
+  z-index: 1;
 
-    width: var(--box-width);
-    height: var(--box-height);
+  width: var(--box-width);
+  height: var(--box-height);
 
-    border: 1px solid var(--color-red);
+  border: 1px solid var(--color-red);
 
-    &--green {
-        border-color: var(--color-green);
-    }
+  &--green {
+    border-color: var(--color-green);
+  }
 
-    &--blue {
-        border-color: var(--color-blue);
-    }
+  &--blue {
+    border-color: var(--color-blue);
+  }
+
+  &--orange {
+    border-color: var(--color-orange);
+  }
+
+  &--purple {
+    border-color: var(--color-purple);
+  }
 }
 
 .rabit {
-    position: absolute;
-    top: calc(var(--box-top) - var(--box-width) - 40px);
-    left: var(--box-left);
-    z-index: 1;
+  position: absolute;
+  top: calc(var(--box-top) - var(--box-width) - 40px);
+  left: var(--box-left);
+  z-index: 1;
 
-    width: var(--box-width);
-    height: var(--box-height);
+  width: var(--box-width);
+  height: var(--box-height);
 }
 
 .moustache {
-    position: absolute;
-    top: calc(var(--box-top) - 20px);
-    left: calc(var(--box-left) - var(--box-width));
-    z-index: 1;
+  position: absolute;
+  top: calc(var(--box-top) - 20px);
+  left: calc(var(--box-left) - var(--box-width));
+  z-index: 1;
 
-    width: calc(var(--box-width) * 4);
+  width: calc(var(--box-width) * 4);
 }
