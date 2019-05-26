@@ -18,8 +18,8 @@
     "jest": true
   },
   "globals": {
-    window: true,
-    navigator: true,
-    document: true
+    "window": true,
+    "navigator": true,
+    "document": true
   }
 }
